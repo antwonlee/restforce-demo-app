@@ -5,6 +5,7 @@ ruby "2.3.0"
 gem "autoprefixer-rails"
 gem 'bootstrap', '~> 4.0.0.alpha3'
 gem "delayed_job_active_record"
+gem "devise"
 gem "flutie"
 gem "high_voltage"
 gem "jquery-rails"
