@@ -7,6 +7,7 @@ gem 'bootstrap', '~> 4.0.0.alpha3'
 gem "delayed_job_active_record"
 gem "devise"
 gem "flutie"
+gem "font-awesome-rails"
 gem "high_voltage"
 gem "jquery-rails"
 gem "normalize-rails", "~> 3.0.0"
