@@ -1,4 +1,6 @@
 class AccountsController < ApplicationController
+  before_action :authenticate_user!
+
   def index
     @accounts = salesforce.query("select Id, Name, Website, Phone from Account")
   end

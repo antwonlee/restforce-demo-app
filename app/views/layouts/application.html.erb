@@ -15,8 +15,10 @@
 </head>
 <body class="<%= body_class %>">
   <%= render "shared/navbar" %>
-  <%= render "shared/nav_inline" if user_signed_in? %>
-  <%= render "flashes" -%>
+  <%= render "shared/nav_inline" %>
+  <div class="container">
+    <%= render "flashes" -%>
+  </div>
   <%= yield %>
   <%= render "javascript" %>
   <%= render "css_overrides" %>
