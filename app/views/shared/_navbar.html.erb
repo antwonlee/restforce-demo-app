@@ -20,9 +20,9 @@
         </li>
         <li class="nav-item">
           <% if user_signed_in? %>
-            <%= link_to 'Sign Out', destroy_user_session_path, method: :delete, class: "nav-link" %>
+            <%= link_to 'Sign Out', destroy_user_session_path, method: :delete, class: "nav-link btn-sm btn-primary btn-sign-out" %>
           <% else %>
-            <%= link_to 'Sign In', new_user_session_path, class: "nav-link" %>
+            <%= link_to 'Sign In', new_user_session_path, class: "nav-link btn-sm btn-primary btn-sign-in" %>
           <% end %>
         </li>
       </ul>
