@@ -1,0 +1,16 @@
+<div id="accounts-new-container">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3 card card-block">
+        <%= simple_form_for :account, url: "/account"  do |f| %>
+          <%= f.input :name, input_html: { value: @account.Name } %>
+          <%= f.input :website, input_html: { value: @account.Website } %>
+          <%= f.input :phone, input_html: { value: @account.Phone } %>
+          <%= f.input :id, as: :hidden, input_html: { value: @account.Id } %>
+          <br />
+          <%= f.button :button, "Update Account".html_safe, class: "btn btn-block btn-primary", data: {disable_with: "<i class='fa fa-spinner fa-spin'></i>"} %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

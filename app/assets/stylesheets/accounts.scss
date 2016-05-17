@@ -1,6 +1,10 @@
 #accounts-container,
-#accounts-show-container {
+#accounts-show-container,
+#accounts-new-container {
   margin-top: 50px;
+  label, .help-block {
+    font-size: 0.75em;
+  }
 }
 
 #accounts-show-button-container {

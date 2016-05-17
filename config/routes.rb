@@ -3,4 +3,6 @@ Rails.application.routes.draw do
   root "pages#index"
 
   resources :accounts
+
+  post "/account", to: "accounts#update"
 end

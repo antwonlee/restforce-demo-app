@@ -1,4 +1,15 @@
 <div id="accounts-new-container">
   <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3 card card-block">
+        <%= simple_form_for :account, url: accounts_path do |f| %>
+          <%= f.input :name %>
+          <%= f.input :website %>
+          <%= f.input :phone %>
+          <br />
+          <%= f.button :button, "Create Account".html_safe, class: "btn btn-block btn-primary", data: {disable_with: "<i class='fa fa-spinner fa-spin'></i>"} %>
+        <% end %>
+      </div>
+    </div>
   </div>
 </div>
