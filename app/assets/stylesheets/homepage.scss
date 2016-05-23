@@ -1,4 +1,16 @@
 #homepage-container {
   margin-top: 50px;
   margin-bottom: 100px;
+  .jumbotron {
+    border: 1px solid #e5e5e5;
+    background: none;
+  }
+  .homepage-icons {
+    margin: 0 auto;
+    padding: 20px;
+    width: 100px;
+  }
+  .card-text {
+    text-align: center;
+  }
 }
