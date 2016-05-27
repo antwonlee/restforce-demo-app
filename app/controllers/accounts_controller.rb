@@ -9,9 +9,6 @@ class AccountsController < ApplicationController
     @account = salesforce.find("Account", params[:id])
   end
 
-  def new
-  end
-
   def create
     @account = salesforce.create(
       "Account",

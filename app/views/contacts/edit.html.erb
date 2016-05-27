@@ -1,0 +1,15 @@
+<div id="contacts-new-container">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3 card card-block">
+        <%= simple_form_for :contact, url: "/contact"  do |f| %>
+          <%= f.input :name, input_html: { value: @contact.Name } %>
+          <%= f.input :email, input_html: { value: @contact.Email } %>
+          <%= f.input :id, as: :hidden, input_html: { value: @contact.Id } %>
+          <br />
+          <%= f.button :button, "Update Contact".html_safe, class: "btn btn-block btn-primary", data: {disable_with: "<i class='fa fa-spinner fa-spin'></i>"} %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

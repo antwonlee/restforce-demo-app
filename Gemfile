@@ -10,6 +10,7 @@ gem "flutie"
 gem "font-awesome-rails"
 gem "high_voltage"
 gem "jquery-rails"
+gem 'kaminari'
 gem "normalize-rails", "~> 3.0.0"
 gem "pg"
 gem "puma"

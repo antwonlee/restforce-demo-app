@@ -1,0 +1,40 @@
+<div id="contacts-container">
+  <div class="container">
+    <%= link_to 'New Contact', new_contact_path, class: 'btn btn-success btn-sm' %>
+    <br /><br />
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th>Record ID</th>
+          <th>Contact Name</th>
+          <th colspan="4">Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @contacts.each do |contact| %>
+          <tr>
+            <td><%= contact.Id %></td>
+            <td><%= contact.Name %></td>
+            <td><%= contact.Email %></td>
+            <td>
+              <%= link_to contact_path(id: contact.Id), class: "btn btn-secondary" do %>
+                <i class="fa fa-search"></i>
+              <% end %>
+            </td>
+            <td>
+              <%= link_to edit_contact_path(id: contact.Id), class: "btn btn-primary" do %>
+                <i class="fa fa-pencil"></i>
+              <% end %>
+            </td>
+            <td>
+              <%= link_to contact_path(id: contact.Id), method: :delete, class: "btn btn-danger" do %>
+                <i class="fa fa-trash-o"></i>
+              <% end %>
+            </td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+    <br />
+  </div>
+</div>
