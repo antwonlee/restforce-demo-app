@@ -19,6 +19,7 @@ gem "recipient_interceptor"
 gem 'restforce'
 gem "sass-rails", "~> 5.0"
 gem "simple_form"
+gem "skylight"
 gem "sprockets", ">= 3.0.0"
 gem "sprockets-es6"
 gem "title"
